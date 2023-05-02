@@ -1,5 +1,5 @@
 # huffman-tokenizer
-Use of Huffman coding to create a new subword tokenizer for NLP and machine translation
+Use of Huffman coding to create a new subword tokenizer for NLP and machine translation.
 
 ## Usage
 The normal pipeline to use this script is:
@@ -22,3 +22,6 @@ The tokenize/detokenize, compress/decompress and char/dechar are mirror operatio
 
 ## Data
 Our training and test data come mostly from WMT 2014 (Bojar et al., 2014) and WMT 2019 (Barrault et al., 2019) and include also the JW300 data (Agić and Vulić, 2019). They are hosted as xz compressed files in [Switchdrive](https://drive.switch.ch/index.php/s/vm85Upk2NhB59O9).
+
+## Acknowledgements
+Parts of the code of the HuffmanCoding class defined in [huffman.py](./huffman.py) are based on the [huffman-coding](https://github.com/bhrigu123/huffman-coding) code by Mr. Bhrigu Srivastava with his explicit authorization.
