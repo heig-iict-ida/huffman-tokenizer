@@ -19,3 +19,6 @@ Now train the machine learning model on the SOURCE-LANG.char and TARGET-LANG.cha
 The tokenize/detokenize, compress/decompress and char/dechar are mirror operations, they should produce (almost) exact reversible streams. Also note that the `-i` and `-o` arguments are optional and the script will use respectively stdin and stdout if not provided, which makes the script pipe-able:
 
 ```echo "hello world" | ./huffman-tokenizer.py tokenize | ./huffman-tokenizer.py compress -v mappings/en.json | ./huffman-tokenizer.py char | ./huffman-tokenizer.py dechar | ./huffman-tokenizer.py decompress -v test/en.vocab | ./huffman-tokenizer.py detokenize```
+
+## Data
+Our training and test data come mostly from WMT 2014 (Bojar et al., 2014) and WMT 2019 (Barrault et al., 2019) and include also the JW300 data (Agić and Vulić, 2019). They are hosted as xz compressed files in [Switchdrive](https://drive.switch.ch/index.php/s/vm85Upk2NhB59O9).
